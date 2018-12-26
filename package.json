@@ -1,13 +1,13 @@
 {
-  "name": "docker_web_app",
+  "name": "request-inspector",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "Tony Jarriault",
-  "main": "server.js",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
   }
 }

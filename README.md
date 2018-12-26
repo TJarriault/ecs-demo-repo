@@ -1,2 +1,14 @@
-# Amazon ECS PHP Simple Demo App
-Directions on how to launch this sample app on Amazon ECS can be found in the documentation: [Docker basics](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html).
+# Request Inspector
+
+## Usage
+
+```
+npm install
+npm start
+```
+
+Browse to http://localhost:8080 to see the 
+
+## Credits
+
+This project uses the stylesheet from the [tabler](https://github.com/tabler/tabler) project.
