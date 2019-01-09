@@ -18,6 +18,21 @@ app.get('*', (req, res) => {
   })
 });
 
+
+app.get('/oauth2/idpresponse', function (req, res) {
+console.log('/oauth2/idpresponse');
+  res.render('index', {
+    os: {
+      hostname: os.hostname(),
+      type: os.type(),
+      platform: os.platform(),
+      release: os.release()
+    },
+    headers: Object.keys(req.headers).sort().map((name) => ({ name, value: req.headers[name] })),
+    env: Object.keys(process.env).sort().map((key) => ({ key, value: process.env[key] }))
+  })
+}); 
+
 const port = process.env.PORT || 8080;
 
 const server = http.createServer(app);
